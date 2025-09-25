@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu console</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre Seu Console para Venda Rápida!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda seu Console Fácil e Rápido</h1>
+                <p>Detalhe o modelo, as características e os acessórios que o console possui:</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do Anúncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" minlength="1" maxlength="200"
+                            placeholder="Insira um título para o seu anúncio" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block"
+                            placeholder="Insira o valor em Reais (R$)" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">Marca do Console <span class="required-field">*</span></label>
+                        <input type="text" name="brand" id="brand" class="block" minlength="1" maxlength="30"
+                            list="marcas" placeholder="Digite a marca (Ex: Sony)" required>
+                        <datalist id="marcas">
+                            <option value="Sony">
+                            <option value="Microsoft">
+                            <option value="Nintendo">
+                            <option value="Sega">
+                            <option value="Atari">
+                        </datalist>
+                    </div>
+                    <div class="box-input">
+                        <label for="model">Modelo do Console <span class="required-field">*</span></label>
+                        <input type="text" name="model" id="model" class="block" minlength="1" maxlength="30"
+                            list="modelos" placeholder="Digite o modelo (Ex: PS5 Slim ou Xbox 360)" required>
+                        <datalist id="modelos">
+                            <option value="PlayStation 5">PlayStation 5</option>
+                            <option value="PlayStation 5 Slim">PlayStation 5 Slim</option>
+                            <option value="PlayStation 4 Pro">PlayStation 4 Pro</option>
+                            <option value="PlayStation 4 Slim">PlayStation 4 Slim</option>
+                            <option value="PlayStation 3">PlayStation 3</option>
+                            <option value="PS Vita">PS Vita</option>
+                            <option value="PSP">PSP</option>
+                            <option value="Xbox Series X">Xbox Series X</option>
+                            <option value="Xbox Series S">Xbox Series S</option>
+                            <option value="Xbox One X">Xbox One X</option>
+                            <option value="Xbox One S">Xbox One S</option>
+                            <option value="Xbox 360">Xbox 360</option>
+                            <option value="Nintendo Switch OLED">Nintendo Switch OLED</option>
+                            <option value="Nintendo Switch">Nintendo Switch</option>
+                            <option value="Nintendo Switch Lite">Nintendo Switch Lite</option>
+                            <option value="Wii U">Wii U</option>
+                            <option value="Wii">Wii</option>
+                            <option value="Nintendo 3DS">Nintendo 3DS</option>
+                            <option value="Nintendo DS">Nintendo DS</option>
+                            <option value="Steam Deck">Steam Deck</option>
+                            <option value="Sega Dreamcast">Sega Dreamcast</option>
+                            <option value="Sega Mega Drive">Sega Mega Drive</option>
+                        </datalist>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição <span>*</span></label>
+                        <textarea name="description" id="description" minlength="1" maxlength="2000" placeholder="Detalhes sobre a condição do console."></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="games">Jogos Inclusos: Liste os títulos dos jogos que o acompanham (Físico/Digital)</label>
+                        <input type="text" name="games" id="games" class="block" placeholder="Títulos dos jogos inclusos (Ex: The Last of Us, Zelda).">
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase_date">Data de Compra <span class="required-field">*</span></label>
+                        <input type="date" name="purchase_date" id="purchase_date" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <p>O console ainda possui garantia? <span class="required-field">*</span></p>
+                        <input type="radio" id="g_yes" name="guarantee" value="has_a_guarantee" required>
+                        <label for="g_yes">Sim</label>
+                        <input type="radio" id="g_no" name="guarantee" value="no_warranty" required>
+                        <label for="g_no">Não</label>
+                    </div>
+                    <div class="accessories-box">
+                        <p>Acessórios Adicionais</p>
+                        <ul class="accessories-list">
+                            <li>
+                                <input type="checkbox" name="accessories[]" id="extra_control" value="extra_control">
+                                <label for="extra_control">Controle Extra</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="accessories[]" id="gamer_headset" value="gamer_headset">
+                                <label for="gamer_headset">Headset Gamer</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="accessories[]" id="charging_station" value="charging_station">
+                                <label for="charging_station">Base de Carregamento</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="accessories[]" id="hd_ssd" value="hd_ssd">
+                                <label for="hd_ssd">HD ou SSD Externo</label>
+                            </li>
+                        </ul>
+                        <ul class="accessories-list">
+                            <li>
+                                <input type="checkbox" name="accessories[]" id="vertical_base" value="vertical_base">
+                                <label for="vertical_base">Base Vertical</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="accessories[]" id="hdmi" value="hdmi">
+                                <label for="hdmi">Cabo HDMI de Alta Velocidade (2.1)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="accessories[]" id="Grips" value="Grips">
+                                <label for="Grips">Capas Protetoras</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="accessories[]" id="v_as" value="v_as">
+                                <label for="v_as">Volante ou Arcade Stick</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do console <span class="required-field">*</span></p>
+                        <input type="file" id="images" name="images" multiple accept="image/png, image/jpg" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

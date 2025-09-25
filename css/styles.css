@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron';
+}
+
+body {
+    background-image: url("../img/background.png");
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
+.header {
+    height: 160px;
+    background-image: url("../img/titleimg.jpg");
+    background-size: cover;
+    background-position: center -195px;
+    padding: 20px;
+}
+
+.header h3 {
+    color: #fff;
+}
+
+.block {
+    display: block;
+}
+
+select {
+    display: block;
+}
+
+.form-container {
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top:-62px;
+}
+
+.form-header {
+    height: 45px;
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.form-header p {
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding: 0 5px;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+.form-body {
+    padding: 30px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    margin-bottom: 20px;
+}
+
+.required-field {
+    color: #d80835;
+}
+
+.box-input {
+    margin-bottom: 35px;
+}
+
+.accessories-list {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px 30px 0;
+}
+.accessories-list li {
+    margin-bottom: 1px;
+}
+
+.box-input p {
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    height: 50px;
+    width: 150px;
+    border: 2px solid transparent;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.1s;
+}
+
+.btn-submit:hover {
+    border-color: blue;
+    color: transparent;
+    background-image: url("../img/submit.webp");
+    background-position: center;
+    background-size: cover;
+}
